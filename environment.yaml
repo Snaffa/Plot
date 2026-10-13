@@ -1,0 +1,17 @@
+name: MCPlot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=2.0
+  - scipy
+  - pandas
+  # Editable figures (.mplfig) are pickled matplotlib objects: keep the same
+  # matplotlib minor version to be able to reopen them later.
+  - matplotlib=3.10
+  - pyqt          # QtAgg backend: interactive window with the "Figure options" editor
+  - ipympl        # %matplotlib widget in the notebooks
+  - jupyterlab
+  - ipykernel
+  - opencv        # animator.py
+  - ffmpeg        # mp4_2_gif.py
